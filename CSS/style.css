@@ -9,24 +9,27 @@ html{
 }
 header{
 width: 100%;
-height: 100%px;
+height: 80px;
 display: flex;
 align-items:center;
+padding: 0 10px;
+background: rgb(95, 133, 138);
 justify-content: space-between;
-padding: 0 60px;
-background: #75600b;
+
 }
 .hero{
-    height: 100%;
+    height: 100vh;
     width: 100%;
-    background-position:center;
+    background-image: url(/assets/italian-cuisine-2378729_1920.jpg);
+    background-position: center;
     background-size: cover;
 }
 .logo{
     font-size: 28px;
     font-weight: bold;
-    color: #2d2602;
-    margin-right: 40px;
+    color: #213032;
+    margin-left: -35vw;
+    
 }
 .nav-bar ul{
     display: flex;
@@ -42,8 +45,8 @@ background: #75600b;
     text-decoration: none;
 }
 .nav-bar ul li:hover a{
-    background-color: #aa7e07;
-    color: #191401;
+    background-color: #97a2a3;
+    color: #213032;
     cursor: pointer;
 }
 .content{
@@ -53,9 +56,9 @@ background: #75600b;
     transform: translateY(-50%);
 }
 h1{
-    color: #0e0f0f;
+    color: #213032;
     font-size: 75px;
-    margin: 10px 0px 10px;
+    margin: 20px 0px 20px;
 }
 h3{
     color: #edffef;
@@ -69,7 +72,7 @@ h4{
 }
 .button{
 position: absolute;
-background-color: #527074;
+background-color: #213032;
 color: #fff;
 text-decoration: none;
 border: 2px solid black;
@@ -86,12 +89,11 @@ transform: .4s;
 .about{
     width: 100%;
     padding: 100px 0px;
-    background-color: #6b4a18;
-    background-image: url("assets\pizza-3010062_1280.jpg");
+    background-color: #314e52;
 }
 .about img{
-    height: 300;
-    width: 600px;
+    height: auto;
+    width: 430px;
     border-radius: 20px 0 20px 0;
 }
 .main{
@@ -111,11 +113,11 @@ transform: .4s;
     text-align: center;
 }
 .about-text p{
-    color: #c2cccd;
+    color: #97a2a3;
     letter-spacing: 1px;
-    line-height: 35px;
+    line-height: 28px;
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 45px;
 }
 .about-text{
     width: 500px;
@@ -152,7 +154,7 @@ transform: .4s;
 }
 .box .card img{
     width: 100%;
-    height: 100%;
+    height: 1005;
     object-fit: cover;
    
 }
@@ -183,7 +185,7 @@ transform: .4s;
 }
 .box .card button{
     position:relative;
-    background-color: #747a7a;
+    background-color: #213032;
     color: #fff;
     text-decoration: none;
     border: 2px solid black;
@@ -197,12 +199,12 @@ transform: .4s;
     border: 2px solid black;
     cursor: pointer;
  }
- /* Categories */
+ /*Categories*/
  .categories{
     width: 100%;
     padding: 100px 0px;
-    background-color: #855805;
- } 
+    background-color: #314e52;
+ }
  .categories h2{
     color:#edffef;
     font-size: 75px;
@@ -213,14 +215,13 @@ transform: .4s;
  }
  .ca-card{
     position: relative;
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     margin: 10px;
     border: 5px solid #ccc;
     border-radius: 50%;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     overflow: hidden;
-    background-color: #c39b0b;
  }
  .box .ca-card .content{
     position: absolute;
@@ -233,8 +234,8 @@ transform: .4s;
     text-align: center;
     opacity: 0;
     transition: opacity 0.3s;
- } 
-  .box .ca-card:hover .content{
+ }
+ .box .ca-card:hover .content{
     opacity: 1;
  }
  .ca-card h3{
@@ -248,51 +249,58 @@ transform: .4s;
     margin-bottom: 10px;
 }
 .box .ca-card button{
-    justify-content: center;
     position:relative;
-    background-color: #cd9e39;
-    color: #8d5a13;
+    background-color: #213032;
+    color: #fff;
     text-decoration: none;
-    border: 2px solid rgb(209, 169, 11);
+    border: 2px solid black;
     font-weight: bold;
     transform:.4s;
-   
-   
+    padding: 13px 30px;
 }
 .box .ca-card button:hover{
-    background-color: #ffffff;
-    color: #213032;
+    background-color: #97a2a3;
     border: 2px solid black;
     cursor: pointer;
-} 
- .box .ca-card img{
+    color: #05020f;
+}
+.box .ca-card img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-} 
+}
 /*Contact form*/
 .contact{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
-    background: #5d4316;
+    padding: 80px;
+    background: #182f32;
 }
-.contact-info,.contact-form{
-    width: 100%;
-    max-width: 400px;
-    margin: 20px;
-    text-align: center;
-    color: #edffef;
-    font-size: 25px;
-}
-.contact-info h2, .contact-form h2{
-    font-size: 24px;
+.contact-info h2{
+    color:#edffef;
+    font-size: 55px;
+    text-transform: capitalize;
+    margin-left: 70px;
     margin-bottom: 20px;
-    color: #edffef;
-}
-.contact-form form{
     text-align: center;
+    
+}
+
+.contact-info p{
+    color: #a0b1ea;
+    font-size: 20px;
+    margin-left: -15vw;
+    font-weight: 600;
+    margin-top: 3vw;
+}
+
+
+
+
+.contact-form form{
+    text-align: left;
+ 
 }
 .contact-form label, 
 .contact-form input , 
@@ -303,29 +311,32 @@ width: 100%;
 margin-bottom: 10px;
 }
 .contact-form button{
-    background-color: #9f740e;
-    color: #ffffff;
+    background-color: #213032;
+    color: #fff;
     text-decoration: none;
-    border: 2px solid rgb(92, 70, 4);
+    border: 2px solid black;
     font-weight: bold;
     transform:.4s;
     padding: 10px 0px;
 }
 .contact-form button:hover{
-    background-color: #b59b1b;
-    color: #322f21;
-    border: 2px solid rgb(104, 68, 9);
+    background-color: #97a2a3;
+    color: #213032;
+    border: 2px solid black;
     cursor: pointer;
 }
 .contact-form label{
     text-align: left;
     color: #edffef;
+    margin-top: 6vw;
 }
 .contact-form input, .contact-form textarea{
-    padding: 8px;
+    padding: 6px;
+    width: 70vh;
+    height: 5vh;
 }
 .contact-info p{
-padding: 15px;
+padding: 10px;
 }
 .social-icons{
     display: flex;
@@ -337,23 +348,22 @@ padding: 15px;
     width: 40px;
     height: 40px;
     margin: 0 10px;
-    color: #3e2e03;
+    color: #97a2a3;
     text-align: center;
     line-height: 40px;
     font-size: 38px;
 }
 .social-icon:hover{
-    color: #ead00b;
+    color: #314e52;
     cursor: pointer;
 }
 footer{
     padding: 20px 0;
-    background: #75600b;
-
+    background: #182f32;
 }
 footer h5{
     font-size: 25px;
     margin-top: 10px;
     text-align: center;
-    color: #150d02;
+    color: #97a2a3;
 }
