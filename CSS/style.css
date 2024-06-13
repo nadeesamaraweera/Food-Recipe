@@ -377,3 +377,324 @@ footer h5{
     text-align: center;
     color: #97a2a3;
 }
+
+
+
+/* ---------------responsive--------------------------- */
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .logo {
+        margin-left: -20vw;
+    }
+    h1 {
+        font-size: 60px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    .nav-bar ul li a {
+        font-size: 18px;
+        padding: 6px 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .logo {
+        margin-left: -10vw;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .nav-bar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-bar ul li a {
+        padding: 10px;
+        margin: 5px 0;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    .logo {
+        margin: 0;
+    }
+    .content {
+        left: 5%;
+        top: 50%;
+        width: 90%;
+        text-align: center;
+        transform: translateY(-50%);
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        font-size: 24px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    .button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .nav-bar ul {
+        padding: 10px 0;
+    }
+    .nav-bar ul li a {
+        padding: 8px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .about h2 {
+        font-size: 60px;
+    }
+    .about img {
+        width: 350px; /* Adjust image size for medium screens */
+    }
+    .about-text p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .about-text {
+        width: 100%; /* Text takes full width on smaller screens */
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about h2 {
+        font-size: 50px;
+    }
+    .about img {
+        width: 300px; /* Adjust image size for smaller screens */
+    }
+    .about-text p {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .main {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center elements */
+    }
+}
+
+@media (max-width: 576px) {
+    .about h2 {
+        font-size: 40px;
+    }
+    .about img {
+        width: 100%; /* Image takes full width on very small screens */
+    }
+    .about-text p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .about-text {
+        padding: 0 10px; /* Reduce padding for very small screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .recipe h2 {
+        font-size: 60px;
+    }
+    .card {
+        width: 250px;
+        height: 250px;
+    }
+    .card h3 {
+        font-size: 18px;
+    }
+    .box .card p {
+        font-size: 13px;
+    }
+    .box .card button {
+        padding: 10px 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .recipe h2 {
+        font-size: 50px;
+    }
+    .card {
+        width: 200px;
+        height: 200px;
+    }
+    .card h3 {
+        font-size: 16px;
+    }
+    .box .card p {
+        font-size: 12px;
+    }
+    .box .card button {
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .recipe h2 {
+        font-size: 40px;
+    }
+    .card {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+    .card h3 {
+        font-size: 14px;
+    }
+    .box .card p {
+        font-size: 12px;
+    }
+    .box .card button {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .categories h2 {
+        font-size: 60px;
+    }
+    .ca-card {
+        width: 250px;
+        height: 250px;
+    }
+    .ca-card h3 {
+        font-size: 18px;
+    }
+    .box .ca-card p {
+        font-size: 13px;
+    }
+    .box .ca-card button {
+        padding: 10px 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .categories h2 {
+        font-size: 50px;
+    }
+    .ca-card {
+        width: 200px;
+        height: 200px;
+    }
+    .ca-card h3 {
+        font-size: 16px;
+    }
+    .box .ca-card p {
+        font-size: 12px;
+    }
+    .box .ca-card button {
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .categories h2 {
+        font-size: 40px;
+    }
+    .ca-card {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+        border-radius: 10px; /* Adjust for smaller screens */
+    }
+    .ca-card h3 {
+        font-size: 14px;
+    }
+    .box .ca-card p {
+        font-size: 12px;
+    }
+    .box .ca-card button {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .contact-info h2 {
+        font-size: 45px;
+        margin-left: 10vw;
+    }
+    .contact-info p {
+        font-size: 18px;
+    }
+    .contact-form input, .contact-form textarea {
+        width: 60vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-info h2 {
+        font-size: 35px;
+        margin-left: 5vw;
+    }
+    .contact-info p {
+        font-size: 16px;
+    }
+    .contact-form input, .contact-form textarea {
+        width: 50vh;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-info h2 {
+        font-size: 30px;
+        margin-left: 0;
+    }
+    .contact-info p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .contact-form label {
+        font-size: 16px;
+    }
+    .contact-form input, .contact-form textarea {
+        width: 100%;
+        height: auto;
+    }
+    .contact-form input {
+        height: 5vh;
+    }
+    .contact-form textarea {
+        height: 15vh;
+    }
+    .social-icon {
+        font-size: 30px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    footer h5 {
+        font-size: 20px;
+    }
+}
