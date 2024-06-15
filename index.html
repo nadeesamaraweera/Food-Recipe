@@ -25,13 +25,24 @@
         </div>
         <div class="logo">AirFryer Recipes</div>
         <div class="nav-bar">
-            
-            <ul>
+            <ul class="sidebar">
+
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" color="black" height="24px"  viewBox="0 -960 960 960" width="20px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#main">About</a></li>
                 <li><a href="#recipe">Recipes</a></li>
                 <li><a href="#categories">Categories</a></li>
                 <li><a href="#contact">Contact</a></li>
+            </ul> 
+            <ul>
+                <li class="hideOnMobile"><a href="#hero">Home</a></li>
+                <li class="hideOnMobile"><a href="#main">About</a></li>
+                <li class="hideOnMobile"><a href="#recipe">Recipes</a></li>
+                <li class="hideOnMobile"><a href="#categories">Categories</a></li>
+                <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+                <li  class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"color="black" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+
             </ul> 
             <!-- <div class="icon">
                 <box-icon name='menu'></box-icon>
@@ -223,6 +234,20 @@
     </div>
     <h5>CopyRight © 2023 By Flavoursome Recipes </h5>
 </footer>
+
+<script>
+    function showSidebar(){
+        const sidebar =document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    
+    }
+
+    function hideSidebar(){
+        const sidebar =document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    
+    }
+ </script>
 </body>
 
 </html>
